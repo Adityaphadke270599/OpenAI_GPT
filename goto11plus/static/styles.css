@@ -1,0 +1,39 @@
+/* Overall background */
+.bg-pattern {
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text color */
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  background: #ffffff; /* White background for content */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+h1, h2, h3 {
+  color: #333; /* Darker text for headings */
+}
+
+.nav-link {
+  color: #333; /* Darker text for nav links */
+  font-size: 1.1em; /* Slightly larger font size for navigation */
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #0056b3; /* Highlight color for nav links */
+}
+
+.btn-primary {
+  background-color: #0056b3; /* Blue color for buttons */
+  border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+  background-color: #00397a; /* Darker blue on hover */
+}
+
+/* Additional global padding and margin settings can be adjusted as needed */

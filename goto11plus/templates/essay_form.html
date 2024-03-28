@@ -1,0 +1,39 @@
+<!-- templates/essay_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Essay Question</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_essay.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></head>
+    <body>
+
+        <div class="bg-pattern">
+            <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+                <div class="card p-4" style="max-width: 800px; width: 100%;">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3 text-center">Essay Submission</h3>
+                        <form action="/essay" method="POST">
+                            <div class="form-group">
+                                <label for="essayQuestion"> Question:</label>
+                                <textarea class="form-control" id="essayQuestion" name = "essay_question" rows="3" readonly style="height:auto; resize: none;">{{question}}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="essayContent">Your Answer:</label>
+                                <textarea class="form-control" id="essayContent" name="essay_content" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        
+</html>
