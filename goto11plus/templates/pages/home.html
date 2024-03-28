@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goto11plus - Creative Writing Practice</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="bg-pattern">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <header class="text-center mb-4">
+                    <h1 class="font-weight-bold">Goto11plus</h1>
+                    <h2>Creative Writing practice</h2>
+                </header>
+                <nav class="nav justify-content-center mb-4">
+                    <a class="nav-link active" href=""{{ url_for('pages.home') }}"">Home</a>
+                    <a class="nav-link" href=""{{ url_for('pages.about') }}"">About</a>
+                </nav>
+                <section class="mb-4">
+                    <h3>Home</h3>
+                    <p>
+                        Creative writing is vital in the 11 Plus exam in the UK as it tests a student's ability to express themselves imaginatively and clearly. It enhances critical thinking, boosts vocabulary, and improves storytelling skills. Regular practice not only prepares students for the exam but also fosters a lifelong appreciation for writing and reading, essential for academic success.
+                    </p>
+                    <form action="/" method="POST">
+                    <button type="submit" class="btn btn-primary mt-3">Click here to practice</button>
+                    </form>
+                  </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

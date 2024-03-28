@@ -1,0 +1,68 @@
+/* Overall background */
+.bg-pattern {
+    background-color: #007bff; /* Blue background */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px;
+}
+
+/* Container within the background */
+.container {
+    background: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 800px; /* Maximum width of the container */
+    width: 100%; /* Full width */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Card styling */
+.card {
+    border: none; /* No border for the card */
+}
+
+/* Card header styling */
+.card-header {
+    background-color: #0056b3; /* Blue background for consistency with the theme */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px; /* Padding inside the header */
+}
+
+/* Card body styling */
+.card-body {
+    color: #333; /* Dark text for readability */
+    max-height: 65vh; /* Maximum height before scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Padding inside the body */
+}
+
+/* Card footer styling */
+.card-footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark text for readability */
+    padding: 20px; /* Padding inside the footer */
+    border-top: none; /* No border on the top */
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #0056b3; /* Blue background for buttons */
+    border-color: #0056b3; /* Blue border for buttons */
+    color: #ffffff; /* White text for buttons */
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover {
+    background-color: #00397a; /* Darker blue on hover */
+    border-color: #00397a; /* Darker border on hover */
+}
+
+/* Ensure that the content doesn't touch the edges on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px; /* Smaller margin on smaller screens */
+        padding: 10px; /* Smaller padding on smaller screens */
+    }
+}
